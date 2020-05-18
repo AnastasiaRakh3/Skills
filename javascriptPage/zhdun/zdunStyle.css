@@ -81,7 +81,8 @@ body {
 .main-gradient {
   background: url(pictures/smoke.png) repeat-x -70px 0 fixed,
     linear-gradient(to right, snow 30%, #f1fa78 70%);
-   
+  height: 500px;
+  /* на каждую карточку высоту */
 }
 
 .main-words {
@@ -137,70 +138,52 @@ body {
 .main-header {
   margin: 0 0 30px;
   text-align: center;
+  
 }
 
-.cards-link-item {
-  text-decoration: none;
-  color: inherit;
-}
-
-.cards-list {
-  margin: 20px 0;
-  padding: 0;
-
-  list-style: none;
+/* для карточки JavaScript:начало */
+.windows {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: black;
 
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
 }
+.window-task {
+  width: 300px;
+  height: 300px;
 
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.cards-item {
-  position: relative;
-  width: 190px;
-  height: 290px;
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 10%;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
   border: 2px solid black;
   box-shadow: 0 0 5px 2px black;
   box-sizing: border-box;
   overflow: hidden;
 }
-
-li:not(:nth-of-type(5n)) .cards-item {
-  margin-right: 20px;
+.window-task-name {
+  padding-left: 20px;
+}
+.window-task-text {
+  padding-left: 10px;
+  padding-right: 10px;
+  text-indent: 10px;
 }
 
-.cards-name {
-  margin-top: 2px;
-  margin-left: 2px;
-}
+.window-screen {
+  width: 650px;
+  height: 300px;
+  /* длина по разному для карточки */
+  padding: 25px;
 
-.cards-text {
-  position: absolute;
-  top: 180px;
-  left: 2px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+  border: 2px solid black;
+  box-shadow: 0 0 5px 2px black;
+  box-sizing: border-box;
+  overflow: hidden;
 }
+/* для карточки JavaScript:конец */
 
-.cards-skill {
-  margin: auto 0 10px 1px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.cards-skill-1 {
-  background-color: #f1fa78;
-  padding: 0 10px;
-  border-radius: 50%;
-}
-
-.cards-skill-2 {
-  padding: 0 10px;
-}
