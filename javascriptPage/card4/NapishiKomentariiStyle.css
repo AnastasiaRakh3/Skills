@@ -171,6 +171,7 @@ body {
     min-height: 300px;
     padding-left: 25px;
     padding-right: 25px;
+    padding-bottom: 25px;
     margin-bottom: 50px;
     background-color: rgba(255, 255, 255, 0.6);
     border-radius: 20px;
@@ -183,63 +184,141 @@ body {
 
 /* для карточки JavaScript:конец */
 
-.subscription-message {
+.news {
+    width: 600px;
+    background-color: snow;
+    box-shadow: 0 0 2px 0 black;
+    margin-bottom: 20px;
+}
+
+.news img {
+    width: 100%;
+}
+
+.like-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.like {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+}
+
+.like:before {
+    content: url("pictures/ПустоеCердце.svg");
+}
+
+.like-number {
+    font-size: 12px;
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+.date {
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+.news-text {
+    font-size: 13px;
+    font-style: italic;
+    padding: 0 10px 10px;
+    margin-top: 0;
+}
+
+.added::before {
+    content: url("pictures/ПолноеCердце.svg");
+}
+
+
+/* Комментарий начало */
+
+
+.comment-list {
+    list-style: none;
+    
+}
+
+.comment-user {
     position: relative;
-    min-height: 25px;
-    text-indent: 10px;
-    color: snow;
-    background-color: rgb(131, 19, 196);
-    box-shadow: 0 0 2px 0 rgb(131, 19, 196);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 35px;
-    border-bottom-left-radius: 35px;
-    padding: 15px 30px 15px 30px;
-    margin-left: 15px;
+    font-size: 15px;
+    background-color: snow;
+    box-shadow: 0 0 2px 0 black;
+    padding: 5px 10px;
+    
 }
+.comment-user::before {
+    content: '#' counter(num);
+    counter-increment: num;
 
-.subscription-message::before {
-    content: url("pictures/check-icon.png");
     position: absolute;
-    left: -27px;
-    top: 0;
+    left: -40px;
+    top: -1px;
+
+    background-color: snow;
+    box-shadow: 0 0 2px 0 black;
+    padding: 5px;
+    
+    color:rgb(131, 19, 196)
 }
 
-.subscription {
+.comment-form {
     background-color: snow;
     display: flex;
+    align-items: center;
     box-shadow: 0 0 2px 0 black;
     padding: 5px 10px;
 }
 
-.subscription-inner {
-    display: flex;
-    flex-direction: column;
+.comment-inner {
+   
     width: 100%;
-    background-color: snow;
+    position: relative;
+    
 }
 
-.subscription-label {
+.comment-label {
+    position: absolute;
+    z-index: 1;
+    left: -5px;
+
     font-size: 10px;
     color: rgb(131, 19, 196);
-}
-
-.subcription-email {
     background-color: snow;
-    border: none;
-    border-bottom: 2px solid rgb(131, 19, 196);
-    padding-bottom: 5px;
+    
+    margin: 0;
+    padding-right: 5px;
+
+
 }
 
-.subscription-button {
-    margin-left: 5px;
+.comment-field {
+   width: 100%;
+    border: 1px solid rgb(131, 19, 196);
+    border-radius: 5px;
+    box-sizing: border-box;
+    
+    margin: 15px 0;
+    padding: 5px 10px;
+}
+
+.comment-button {
+    height: 40px;
+    margin-left: 10px;
     border-radius: 20px;
     border: 1px solid black;
     box-shadow: 0 0 3px 1px black;
     color: snow;
     background-color: rgb(131, 19, 196);
 }
-
-.subscription-button:hover {
+.comment-button:hover {
     background-color: #473c8d;
     box-shadow: 0 0 3px 1px #f1fa78;
 }
+
+/* Комментарий конец */
