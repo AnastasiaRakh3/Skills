@@ -1,187 +1,235 @@
 @font-face {
-  font-family: "Sensei-Medium";
-  src: url(fonts/Sensei-Medium.otf);
+    font-family: "Sensei-Medium";
+    src: url(fonts/Sensei-Medium.otf);
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  min-width: 1200px;
-  font-family: "Sensei-Medium";
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
-  color: black;
-  background-color: snow;
+    margin: 0;
+    padding: 0;
+    min-width: 1200px;
+    font-family: "Sensei-Medium";
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: black;
+    background-color: snow;
 }
-/* поменять потом все стили в боди */
+
 .container {
-  width: 1170px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+    width: 1170px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .header {
-  position: fixed;
-  z-index: 1;
-  width: 100%;
-  top: 0;
-
-  background-color: black;
-  box-shadow: 0 0 10px black;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    background-color: black;
+    box-shadow: 0 0 10px black;
 }
 
 .logo {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .logo-img {
-  margin: 10px 0;
+    margin: 10px 0;
 }
 
 .logo-text {
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 60px;
-  color: snow;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 60px;
+    color: snow;
 }
 
 .header-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
 }
 
 .navigation {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-
-  display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
 }
 
 .navigation-item {
-  font-family: "Sensei-Medium";
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 60px;
-
-  margin-left: 40px;
+    font-family: "Sensei-Medium";
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 60px;
+    margin-left: 40px;
 }
 
 .navigation-link {
-  text-decoration: none;
-  color: snow;
+    text-decoration: none;
+    color: snow;
 }
 
 .main-gradient {
-  background: url(pictures/smoke.png) repeat-x -70px 0 fixed,
-    linear-gradient(to right, snow 30%, #f1fa78 70%);
-  height: 500px;
-  /* на каждую карточку высоту */
+    background: url(pictures/smoke.png) repeat-x -70px 0 fixed, linear-gradient(to right, snow 30%, #f1fa78 70%);
+    min-height: 500px;
 }
 
 .main-words {
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 60px;
-  color: black;
-  text-align: center;
-
-  padding-top: 150px;
-  margin: 0;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    color: black;
+    text-align: center;
+    padding-top: 150px;
+    margin: 0;
 }
 
 .footer {
-  background-color: black;
-  box-shadow: 0 0 10px black;
+    background-color: black;
+    box-shadow: 0 0 10px black;
 }
 
 .footer-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0 20px;
 }
 
 .social {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-
-  display: flex;
-  margin: 10px 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    margin: 10px 0;
 }
 
 .social-item:not(:first-child) {
-  margin-left: 30px;
+    margin-left: 30px;
 }
+
 
 /* главные свойства закончились*/
 
 .navigation-item:nth-child(3) .navigation-link {
-  color: #f1fa78;
+    color: #f1fa78;
 }
 
 .main-wrapper {
-  padding: 30px 0;
-  width: 1030px;
-  margin: 0 auto;
-  margin-top: 60px;
+    padding: 30px 0;
+    width: 1030px;
+    margin: 0 auto;
+    margin-top: 60px;
 }
 
 .main-header {
-  margin: 0 0 30px;
-  text-align: center;
+    margin: 0 0 30px;
+    text-align: center;
 }
+
 
 /* для карточки JavaScript:начало */
+
 .windows {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 21px;
-  color: black;
-
-  display: flex;
-  justify-content: space-between;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: black;
+    display: flex;
+    justify-content: space-between;
 }
+
 .window-task {
-  width: 300px;
-  height: 300px;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    border: 2px solid black;
+    box-shadow: 0 0 5px 2px black;
+    box-sizing: border-box;
+    overflow: hidden;
+}
 
-  background-color: rgba(255, 255, 255, 0.6);
-  border-radius: 20px;
-  border: 2px solid black;
-  box-shadow: 0 0 5px 2px black;
-  box-sizing: border-box;
-  overflow: hidden;
-}
 .window-task-name {
-  padding-left: 20px;
+    padding-left: 20px;
 }
+
 .window-task-text {
-  padding-left: 10px;
-  padding-right: 10px;
-  text-indent: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-indent: 10px;
 }
 
 .window-screen {
-  width: 650px;
-  height: 300px;
-  /* длина по разному для карточки */
-  padding: 25px;
-
-  background-color: rgba(255, 255, 255, 0.6);
-  border-radius: 20px;
-  border: 2px solid black;
-  box-shadow: 0 0 5px 2px black;
-  box-sizing: border-box;
-  overflow: hidden;
+    width: 650px;
+    min-height: 300px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 50px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    border: 2px solid black;
+    box-shadow: 0 0 5px 2px black;
+    box-sizing: border-box;
+    overflow: hidden;
 }
+
+
 /* для карточки JavaScript:конец */
+
+.news {
+    width: 600px;
+    background-color: snow;
+    box-shadow: 0 0 2px 0 black;
+    margin-bottom: 20px;
+}
+
+.news img {
+    width: 100%;
+}
+
+.like-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.like {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+}
+
+.like:before {
+    content: url("pictures/ПустоеCердце.svg");
+}
+
+.like-number {
+    font-size: 12px;
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+.date {
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+.news-text {
+    font-size: 13px;
+    font-style: italic;
+    padding: 0 10px 10px;
+    margin-top: 0;
+}
+
+.added::before {
+    content: url("pictures/ПолноеCердце.svg");
+}

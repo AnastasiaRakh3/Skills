@@ -14,7 +14,7 @@ body {
   color: black;
   background-color: snow;
 }
-/* поменять потом все стили в боди */
+
 .container {
   width: 1170px;
   margin: 0 auto;
@@ -81,8 +81,8 @@ body {
 .main-gradient {
   background: url(pictures/smoke.png) repeat-x -70px 0 fixed,
     linear-gradient(to right, snow 30%, #f1fa78 70%);
-  height: 500px;
-  /* на каждую карточку высоту */
+    min-height: 500px;
+  
 }
 
 .main-words {
@@ -166,16 +166,19 @@ body {
   padding-left: 20px;
 }
 .window-task-text {
+  text-indent: 10px;
+
   padding-left: 10px;
   padding-right: 10px;
-  text-indent: 10px;
 }
 
 .window-screen {
   width: 650px;
-  height: 300px;
-  /* длина по разному для карточки */
-  padding: 25px;
+  min-height: 300px;
+  
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-bottom: 50px;
 
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 20px;
