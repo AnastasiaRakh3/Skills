@@ -188,16 +188,14 @@ body {
 }
 /* для карточки JavaScript:конец */
 
-.window-screen-heading {
-}
 .subscription-message {
   position: relative;
   min-height: 25px;
   text-indent: 10px;
 
   color: snow;
-  background-color: rgb(131, 19, 196, 1);
-  box-shadow: 0 0 2px 0 rgb(131, 19, 196, 1);
+  background-color: rgb(131, 19, 196);
+  box-shadow: 0 0 2px 0 rgb(131, 19, 196);
 
   border-top-left-radius: 10px;
   border-top-right-radius: 35px;
@@ -215,15 +213,37 @@ body {
   top: 0;
 }
 .subscription {
+  background-color: snow;
+  display: flex;
+
+  padding: 5px 10px;
 }
 .subscription-inner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: snow;
 }
 .subscription-label {
+  width: 100px;
+  font-size: 12px;
+
+  color: rgb(131, 19, 196);
 }
 .subcription-email {
+  background-color: snow;
+  border: none;
+  border-bottom: 2px solid rgb(131, 19, 196);
+  padding-bottom: 5px;
 }
-.button {
+.subscription-button {
+  margin-left: 5px;
+  border-radius: 20px;
+  border: 1px solid black;
+  box-shadow: 0 0 3px 1px black;
+  color: snow;
+  background-color: rgb(131, 19, 196);
 }
-.button:focus,.button:hover {
-
+.button:focus,
+.button:hover {
 }
