@@ -201,7 +201,7 @@ body {
   border-top-right-radius: 35px;
   border-bottom-left-radius: 35px;
 
-  padding: 15px 150px 15px 30px;
+  padding: 15px 30px 15px 30px;
   margin-left: 15px;
 }
 
@@ -244,6 +244,8 @@ body {
   color: snow;
   background-color: rgb(131, 19, 196);
 }
-.button:focus,
-.button:hover {
+
+.subscription-button:hover {
+  background-color: #473c8d;
+  box-shadow: 0 0 3px 1px #f1fa78;
 }
