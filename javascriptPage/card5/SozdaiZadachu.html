@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>JavaScript навыки</title>
-        <link rel="stylesheet" href="cardStyle.css">
+        <link rel="stylesheet" href="SozdaiZadachuStyle.css">
     </head>
     <body>
         <header class="header">
@@ -41,14 +41,25 @@
         <main class="main-gradient">
             <div class="container">
                 <div class="main-wrapper">
-                    <h1 class="main-header">AAAAAAAA</h1>
+                    <h1 class="main-header">Создай задачу</h1>
                     <div class="windows">
                         <div class="window-task">
                             <h2 class="window-task-name">Задание:</h2>
-                            <p class="window-task-text">AAAAAAAAAA</p>
-                            <p class="window-task-text">AAAAAAAAAA</p>
+                            <p class="window-task-text">Какие у тебя планы на сегодня?</p>
+                            <p class="window-task-text">Создай задачу, учитывая ее приоритетность, кликнул на кнопку-переключатель :)</p>
                         </div>
-                        <div class="window-screen">AAAAAAAAAAA
+                        <div class="window-screen">
+                            <h2>Список задач</h2>
+                            <ol class="todo-list">
+                                <li class="item">Поработать</li>
+                                <li class="item important">Поесть</li>
+                            </ol>
+                            <form class="todo-form" action="" method="post">
+                                <label class="input-label" for="todo-input">Добавь задачу</label>
+                                <input class="input-field" type="text" id="todo-input" value="Посмотреть фильм" placeholder="Планировать день - важно!" required>
+                                <button class="button-priority important">Очень важно</button>
+                                <button class="button-add">Добавить</button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -91,5 +102,6 @@
                     </ul>
                 </div>
             </footer>
+            <script src="SozdaiZadachu.js"></script>
         </body>
     </html>
