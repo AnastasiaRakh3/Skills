@@ -204,8 +204,8 @@ body {
   content: counter(li);
   counter-increment: li;
   position: absolute;
-  left: -40px;
-  top: -0.1px;
+  left: -41px;
+  top: -0.7px;
   background-color: snow;
   border: 0.1px solid grey;
   box-sizing: border-box;
