@@ -1,185 +1,328 @@
 @font-face {
-    font-family: "Sensei-Medium";
-    src: url(fonts/Sensei-Medium.otf);
+  font-family: "Sensei-Medium";
+  src: url(fonts/Sensei-Medium.otf);
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    min-width: 1200px;
-    font-family: "Sensei-Medium";
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 21px;
-    color: black;
-    background-color: snow;
+  margin: 0;
+  padding: 0;
+  min-width: 1200px;
+  font-family: "Sensei-Medium";
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: black;
+  background-color: snow;
 }
 
 .container {
-    width: 1170px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
+  width: 1170px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .header {
-    position: fixed;
-    z-index: 1;
-    width: 100%;
-    top: 0;
-    background-color: black;
-    box-shadow: 0 0 10px black;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  background-color: black;
+  box-shadow: 0 0 10px black;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .logo-img {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 .logo-text {
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 60px;
-    color: snow;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 60px;
+  color: snow;
 }
 
 .header-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
 }
 
 .navigation {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
 }
 
 .navigation-item {
-    font-family: "Sensei-Medium";
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 60px;
-    margin-left: 40px;
+  font-family: "Sensei-Medium";
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 60px;
+  margin-left: 40px;
 }
 
 .navigation-link {
-    text-decoration: none;
-    color: snow;
+  text-decoration: none;
+  color: snow;
 }
 
 .main-gradient {
-    background: url(pictures/smoke.png) repeat-x -70px 0 fixed, linear-gradient(to right, snow 30%, #f1fa78 70%);
-    min-height: 500px;
+  background: url(pictures/smoke.png) repeat-x -70px 0 fixed,
+    linear-gradient(to right, snow 30%, #f1fa78 70%);
+  min-height: 500px;
 }
 
 .main-words {
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 60px;
-    color: black;
-    text-align: center;
-    padding-top: 150px;
-    margin: 0;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  color: black;
+  text-align: center;
+  padding-top: 150px;
+  margin: 0;
 }
 
 .footer {
-    background-color: black;
-    box-shadow: 0 0 10px black;
+  background-color: black;
+  box-shadow: 0 0 10px black;
 }
 
 .footer-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0 20px;
 }
 
 .social {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    margin: 10px 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  margin: 10px 0;
 }
 
 .social-item:not(:first-child) {
-    margin-left: 30px;
+  margin-left: 30px;
 }
-
 
 /* главные свойства закончились*/
 
 .navigation-item:nth-child(3) .navigation-link {
-    color: #f1fa78;
+  color: #f1fa78;
 }
 
 .main-wrapper {
-    padding: 30px 0;
-    width: 1030px;
-    margin: 0 auto;
-    margin-top: 60px;
+  padding: 30px 0;
+  width: 1030px;
+  margin: 0 auto;
+  margin-top: 60px;
 }
 
 .main-header {
-    margin: 0 0 30px;
-    text-align: center;
+  margin: 0 0 30px;
+  text-align: center;
 }
-
 
 /* для карточки JavaScript:начало */
 
 .windows {
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 21px;
-    color: black;
-    display: flex;
-    justify-content: space-between;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: black;
+  display: flex;
+  justify-content: space-between;
 }
 
 .window-task {
-    width: 300px;
-    height: 300px;
-    background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 20px;
-    border: 2px solid black;
-    box-shadow: 0 0 5px 2px black;
-    box-sizing: border-box;
-    overflow: hidden;
+  width: 300px;
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+  border: 2px solid black;
+  box-shadow: 0 0 5px 2px black;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .window-task-name {
-    padding-left: 20px;
+  padding-left: 20px;
 }
 
 .window-task-text {
-    text-indent: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+  text-indent: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .window-screen {
-    width: 650px;
-    min-height: 300px;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 25px;
-    margin-bottom: 50px;
-    background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 20px;
-    border: 2px solid black;
-    box-shadow: 0 0 5px 2px black;
-    box-sizing: border-box;
-    overflow: hidden;
+  width: 650px;
+  min-height: 300px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 50px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+  border: 2px solid black;
+  box-shadow: 0 0 5px 2px black;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
-
 /* для карточки JavaScript:конец */
+
+.computer {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+
+  margin-top: 25px;
+  padding-bottom: 10px;
+
+  background-color: #3c4d77;
+}
+
+.display-wrapper {
+  width: 100%;
+  height: 100px;
+
+  margin: 15px 10px 10px;
+
+  border-radius: 6px;
+  background-image: linear-gradient(to top, #4c6297 10%, #1a2234 90%);
+}
+.display {
+  width: auto;
+  height: 90px;
+  box-sizing: border-box;
+
+  position: relative;
+
+  border-radius: 6px;
+  color: snow;
+  background-color: #2b3755;
+
+  margin: 5px;
+  padding: 10px 25px;
+}
+.display::before {
+  content: ">";
+  position: absolute;
+  left: 10px;
+  color: rgb(103, 206, 0);
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: center;
+
+  font-size: 13px;
+  margin-top: 0;
+}
+.stick {
+  width: 10px;
+  height: 25px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 10px;
+  background-image: linear-gradient(to top, #4c6297 10%, #1a2234 90%);
+
+  transform: rotate(40deg);
+
+  margin: 0 5px;
+}
+.stick:first-child {
+  margin-left: 20px;
+}
+
+.stick-in {
+  width: 4px;
+  height: 20px;
+
+  border-radius: 3px;
+
+  background-color: black;
+}
+.green-button {
+  margin: 0 5px 0 45px;
+  position: relative;
+}
+
+.green-button::before {
+  content: url("pictures/greenButton10.png");
+  position: absolute;
+  left: -20px;
+  top: 3px;
+}
+
+.clear-button {
+  width: 100px;
+  height: 35px;
+
+  border: 0.5px solid black;
+  border-radius: 6px;
+  color: snow;
+
+  margin-right: 10px;
+  background-image: linear-gradient(to bottom, #4d6398, #334266);
+}
+.clear-button:hover {
+  background-image: linear-gradient(to bottom, #677cb2, #455887);
+}
+
+.keyboard {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  background-color: #2b3755;
+  padding: 10px 5px;
+}
+
+.key-button {
+  width: 45px;
+  height: 45px;
+
+  font-size: 20px;
+
+  color: snow;
+  background-image: linear-gradient(to bottom, #4d6398, #334266);
+  border: 0.5px solid black;
+  border-radius: 6px;
+  margin-bottom: 3px;
+}
+
+.key-button:hover {
+  background-image: linear-gradient(to bottom, #677cb2, #455887);
+}
+.key-button.space {
+  width: 580px;
+  white-space: pre;
+}

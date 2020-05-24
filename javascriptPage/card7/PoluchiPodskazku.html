@@ -37,14 +37,18 @@
     <main class="main-gradient">
         <div class="container">
             <div class="main-wrapper">
-                <h1 class="main-header">Напиши комментарий</h1>
+                <h1 class="main-header">Получи подсказку</h1>
                 <div class="windows">
                     <div class="window-task">
                         <h2 class="window-task-name">Задание:</h2>
-                        <p class="window-task-text">Что ты думаешь об этом? Нам очень важен твое мнение.</p>
-                        <p class="window-task-text">Отправь нам свой комментарий.</p>
+                        <p class="window-task-text">Нажми на выделенное слово.</p>
+                        <p class="window-task-text">И ты увидишь комментарий к нему.</p>
                     </div>
                     <div class="window-screen">
+                        <div class="tooltip">
+                            <span class="tooltip-text"></span>
+                            <button class="tooltip-close-button" type="button"><span>Закрыть</span></button>
+                        </div>
                         <h2>Шок! Скандал! Сенсация!</h2>
                         <div class="news">
                             <img src="pictures/Банан.jpg" alt="Бананы">
@@ -55,8 +59,8 @@
                                 <time class="date" datetime="2020-05-20">20 мая 2020</time>
                             </div>
                             <p class="news-text">
-                                В мире существует более тысячи разновидностей бананов, однако все они генетические копии одного банана сорта «кавендиш». Их клонируют из-за отсутствия семян, чтобы продолжать производство. Эта генетическая однородность очень опасна, ведь если бананы атакует
-                                какой-то паразит или болезнь, затронуты будут абсолютно все, что со временем может привести к их полному исчезновению.
+                                В мире существует более тысячи разновидностей бананов, однако все они генетические копии одного банана сорта <button class="tooltip-button" type="button" data-tooltip-text="назван в честь Уильяма Кавендиша, 6-й герцог Девоншир">«кавендиш».</button> Их клонируют из-за отсутствия семян, чтобы продолжать производство. Эта генетическая однородность очень <button class="tooltip-button" type="button" data-tooltip-text="не то слово">опасна,</button> ведь если <button class="tooltip-button" type="button" data-tooltip-text="мой любимый фрукт">бананы</button> атакует
+                                какой-то паразит или болезнь, затронуты будут абсолютно все, что со временем может привести к <button class="tooltip-button" type="button" data-tooltip-text="что не очень хорошо">их полному исчезновению.</button>
                             </p>
                         </div>
                         
