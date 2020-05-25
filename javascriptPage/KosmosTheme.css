@@ -1,0 +1,28 @@
+.kosmos-theme.header {
+  box-shadow: 0 0 10px rgb(131, 19, 196);
+}
+
+.kosmos-theme.main-gradient {
+  background: url(pictures//Kosmos.png) repeat-x -70px 0 fixed;
+  background-color: black;
+}
+.kosmos-theme.footer {
+  box-shadow: 0 0 10px rgb(131, 19, 196);
+}
+
+.kosmos-theme .navigation-item:nth-child(3) .navigation-link {
+  color: rgb(131, 19, 196);
+}
+.kosmos-theme .main-header {
+  color: snow;
+}
+
+.kosmos-theme .cards-item {
+  border: 2px solid rgb(131, 19, 196);
+  box-shadow: 0 0 5px 2px rgb(131, 19, 196);
+}
+
+.kosmos-theme .cards-skill-1 {
+  background-color: rgb(131, 19, 196);
+  color: snow;
+}

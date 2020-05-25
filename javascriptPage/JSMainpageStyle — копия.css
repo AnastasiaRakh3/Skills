@@ -29,7 +29,7 @@ body {
   top: 0;
 
   background-color: black;
-  box-shadow: 0 0 10px black;
+  box-shadow: 0 0 10px rgb(131, 19, 196);
 }
 
 .logo {
@@ -79,8 +79,12 @@ body {
 }
 
 .main-gradient {
-  background: url(pictures/smoke.png) repeat-x -70px 0 fixed,
-    linear-gradient(to right, snow 30%, #f1fa78 70%);
+
+
+/* ! */
+  background: url(pictures//Kosmos.png) repeat-x -70px 0 fixed;
+  background-color: black;
+   
 }
 
 .main-words {
@@ -96,7 +100,7 @@ body {
 
 .footer {
   background-color: black;
-  box-shadow: 0 0 10px black;
+  box-shadow: 0 0 10px rgb(131, 19, 196);
 }
 
 .footer-wrapper {
@@ -123,7 +127,7 @@ body {
 /* главные свойства закончились*/
 
 .navigation-item:nth-child(3) .navigation-link {
-  color: #f1fa78;
+  color: rgb(131, 19, 196);
 }
 
 .main-wrapper {
@@ -136,6 +140,10 @@ body {
 .main-header {
   margin: 0 0 30px;
   text-align: center;
+
+
+  
+  color: snow;
 }
 
 .cards-link-item {
@@ -167,8 +175,8 @@ body {
   flex-direction: column;
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 10%;
-  border: 2px solid black;
-  box-shadow: 0 0 5px 2px black;
+  border: 2px solid rgb(131, 19, 196);
+  box-shadow: 0 0 5px 2px rgb(131, 19, 196);
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -195,9 +203,10 @@ li:not(:nth-of-type(5n)) .cards-item {
 }
 
 .cards-skill-1 {
-  background-color: #f1fa78;
+  background-color: rgb(131, 19, 196);
   padding: 0 10px;
   border-radius: 50%;
+  color: snow;
 }
 
 .cards-skill-2 {
