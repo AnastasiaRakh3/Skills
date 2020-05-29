@@ -1,12 +1,12 @@
-.kosmos-theme.header {
+.kosmos-theme .header {
   box-shadow: 0 0 10px rgb(131, 19, 196);
 }
 
-.kosmos-theme.main-gradient {
+.kosmos-theme .main-gradient {
   background: url(pictures//Kosmos.png) repeat-x -70px 0 fixed;
   background-color: black;
 }
-.kosmos-theme.footer {
+.kosmos-theme .footer {
   box-shadow: 0 0 10px rgb(131, 19, 196);
 }
 

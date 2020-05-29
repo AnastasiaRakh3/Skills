@@ -298,7 +298,10 @@ body {
   padding: 5px 10px;
   background-color: snow;
 }
-
+textarea {
+  resize:vertical;
+  min-height: 30px;
+}
 .text-counter {
   position: absolute;
   left: 5px;
