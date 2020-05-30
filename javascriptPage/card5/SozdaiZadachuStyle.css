@@ -234,6 +234,8 @@ body {
   padding: 7px;
 
   margin-bottom: 10px;
+
+  outline:none;
 }
 .button-priority {
   width: 140px;

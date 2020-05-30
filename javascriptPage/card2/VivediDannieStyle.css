@@ -228,6 +228,8 @@ body {
     border: none;
     border-bottom: 2px solid rgb(131, 19, 196);
     padding-bottom: 5px;
+
+    outline:none;
 }
 
 .subscription-button {
