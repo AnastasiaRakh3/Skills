@@ -237,9 +237,6 @@ body {
   margin-left: 20px;
 }
 
-.hidden {
-  display: none;
-}
 .up-button {
   position: fixed;
   z-index: 1;
@@ -262,6 +259,10 @@ body {
   border-radius: 50%;
 
   background-color: rgba(255, 255, 255, 0.7);
+}
+
+.hidden {
+  display: none;
 }
 
 .up-button:hover {
