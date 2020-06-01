@@ -246,13 +246,15 @@ body {
   right: 150px;
   bottom: 310px;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 60px;
   height: 60px;
 
   font-weight: bold;
   font-size: 40px;
-  text-align: center;
-  vertical-align: center;
 
   color: rgb(131, 19, 196);
 
