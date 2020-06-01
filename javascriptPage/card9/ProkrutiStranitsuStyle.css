@@ -236,16 +236,16 @@ body {
 .news-text li {
   margin-left: 20px;
 }
-
+.hidden {
+  display: none;
+}
 .up-button {
   position: fixed;
   z-index: 1;
   right: 150px;
   bottom: 310px;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: auto;
 
   width: 60px;
   height: 60px;
@@ -261,9 +261,6 @@ body {
   background-color: rgba(255, 255, 255, 0.7);
 }
 
-.hidden {
-  display: none;
-}
 
 .up-button:hover {
   border-color: #473c8d;
