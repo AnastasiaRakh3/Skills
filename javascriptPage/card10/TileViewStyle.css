@@ -1,0 +1,16 @@
+.list-tiles-view.news-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.list-tiles-view .news-block {
+  display: flex;
+  flex-direction: column;
+  width: 43%;
+}
+.list-tiles-view .news-block img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}

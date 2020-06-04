@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>JavaScript навыки</title>
         <link rel="stylesheet" href="OtfiltruiStyle.css">
+        <link rel="stylesheet" href="TileViewStyle.css">
         <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
         <link
             rel="icon"
@@ -58,15 +59,104 @@
         <main class="main-gradient">
             <div class="container">
                 <div class="main-wrapper">
-                    <h1 class="main-header">AAAAAAA</h1>
+                    <h1 class="main-header">Отфильтруй статьи</h1>
                     <div class="windows">
                         <div class="window-task">
                             <h2 class="window-task-name">Задание:</h2>
-                            <p class="window-task-text">AAAAAAAAAA</p>
-                            <p class="window-task-text">AAAAAAAAAAAA</p>
+                            <p class="window-task-text">Выбери подходящий для тебя формат чтения.</p>
+                            <p class="window-task-text">Также ты можешь отфильтровать только интересующие тебя темы.</p>
                         </div>
                         <div class="window-screen">
-                            <h2>AAAAAAAAAAA</h2>
+                            <div class="news-view">
+                                <button class="btn btn-row-view view-checked" type="button">Список</button>
+                                <button class="btn btn-tile-view" type="button">Плитка</button>
+                                <select class="filter" name="news-filter">
+                                    <option value="cats">Котики</option>
+                                    <option value="space">Космос</option>
+                                    <option value="all" selected>Все новости</option>
+                                </select>
+                            </div>
+                            <div class="news-list">
+                                <article class="news-block" data-category="cats">
+                                    <img src="pictures/cat1-350-280.jpg" alt="">
+                                    <div class="news-block-text">
+                                        <h3>Кошки — лучшее лекарство</h3>
+                                        <p>Кошки – известные домашние лекари. Как утверждают ученые, достаточно погладить любимца, чтобы понизить артериальное давление, успокоиться...</p>
+                                        <div class="tag-time">
+                                            <span>#Котики</span>
+                                            <time datetime="2020-06-04">4 июня 2020</time>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="news-block" data-category="space">
+                                    <img src="pictures/space1-350-280.jpg" alt="">
+                                    <div class="news-block-text">
+                                        <h3>Границы вселенной</h3>
+                                        <p> Вселенная не имеет границ. Ни один человек не знает, является ли космос бесконечным или он просто гигантский...</p>
+                                        <div class="tag-time">
+                                            <span>#Космос</span>
+                                            <time datetime="2020-06-03">3 июня 2020</time>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="news-block" data-category="space">
+                                    <img src="pictures/space2-350-280.jpg" alt="">
+                                    <div class="news-block-text">
+                                        <h3>Газовый пузырь</h3>
+                                        <p>В просторах Вселенной есть очень удивительная вещь – гигантский газовый пузырь. Его длина составляет около 200 миллионов световых лет...</p>
+                                        <div class="tag-time">
+                                            <span>#Космос</span>
+                                            <time datetime="2020-06-03">3 июня 2020</time>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="news-block" data-category="cats">
+                                    <img src="pictures/cat2-350-280.jpg" alt="">
+                                    <div class="news-block-text">
+                                        <h3>Коты прячутся, когда больны</h3>
+                                        <p>Инстинкт говорит коту, что, когда он слаб, он легкая добыча для хищника, поэтому в периоды болезни коты стараются спрятаться от возможных опасностей....</p>
+                                        <div class="tag-time">
+                                            <span>#Котики</span>
+                                            <time datetime="2020-06-01">1 июня 2020</time>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="news-block" data-category="space">
+                                    <img src="pictures/space3-350-280.jpg" alt="">
+                                    <div class="news-block-text">
+                                        <h3>Черная дыра</h3>
+                                        <p>Самый яркий объект во всей Вселенной. Внутри черной дыры сила гравитации настолько велика, что из неё невозможно вырваться даже свету...</p>
+                                        <div class="tag-time">
+                                            <span>#Космос</span>
+                                            <time datetime="2020-05-23">23 мая 2020</time>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="news-block" data-category="cats">
+                                    <img src="pictures/cat3-350-280.jpg" alt="">
+                                    <div class="news-block-text">
+                                        <h3>Умывание</h3>
+                                        <p>Частое умывание кошки объясняется не только чистоплотностью животного, но и другими целями. В частности, таким образом кошка слизывает с шерсти....</p>
+                                        <div class="tag-time">
+                                            <span>#Котики</span>
+                                            <time datetime="2020-05-10">10 мая 2020</time>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="news-block" data-category="cats">
+                                    <img src="pictures/cat4-350-280.jpg" alt="">
+                                    <div class="news-block-text">
+                                        <h3>
+                                            Потеют ли кошки?
+                                        </h3>
+                                        <p>Кошки имеют несколько потовых желез, они находятся в таких местах, как щеки и губы, вокруг сосков и между подушечками на лапах...</p>
+                                        <div class="tag-time">
+                                            <span>#Котики</span>
+                                            <time datetime="2020-05-05">5 мая 2020</time>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -110,5 +200,6 @@
                 </div>
             </div>
         </footer>
+        <script src="Otfiltrui.js"></script>
     </body>
 </html>
