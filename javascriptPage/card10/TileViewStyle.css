@@ -14,3 +14,6 @@
   height: 100px;
   object-fit: cover;
 }
+.news-list .hidden {
+  display: none;
+}

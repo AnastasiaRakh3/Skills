@@ -183,3 +183,84 @@ body {
 
 
 /* для карточки JavaScript:конец */
+
+.form-review fieldset {
+    background-color: snow;
+    border-radius: 20px;
+    box-shadow: 0 0 2px 0 black;
+    padding: 0;
+    border: none;
+}
+
+.form-review legend {
+    padding: 10px 10px;
+    margin-left: 15px;
+    border-radius: 25px;
+    background-color: rgb(131, 19, 196);
+    color: snow;
+    box-shadow: 0 0 3px 1px black;
+}
+
+.review {
+    display: none;
+}
+
+label {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    padding-left: 25px;
+}
+
+label::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgb(131, 19, 196);
+}
+
+.review:checked+label::before {
+    background-color: rgb(131, 19, 196);
+}
+
+fieldset p:not(.error) {
+    margin-left: 20px;
+}
+
+.error {
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    background-color: tomato;
+}
+
+.submit-button {
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid black;
+    box-shadow: 0 0 3px 1px black;
+    color: snow;
+    background-color: rgb(131, 19, 196);
+}
+
+.submit-button:hover {
+    background-color: #473c8d;
+    box-shadow: 0 0 3px 1px #f1fa78;
+}
+
+.disabled {
+    opacity: 0.5;
+}
+
+.disabled.submit-button:hover {
+    background-color: rgb(131, 19, 196);
+    box-shadow: 0 0 3px 1px black;
+}
+
+.hidden {
+    display: none;
+}

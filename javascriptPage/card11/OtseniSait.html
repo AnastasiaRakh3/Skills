@@ -58,15 +58,98 @@
         <main class="main-gradient">
             <div class="container">
                 <div class="main-wrapper">
-                    <h1 class="main-header">AAAAAAA</h1>
+                    <h1 class="main-header">Оцени сайт</h1>
                     <div class="windows">
                         <div class="window-task">
                             <h2 class="window-task-name">Задание:</h2>
-                            <p class="window-task-text">AAAAAAAAAA</p>
-                            <p class="window-task-text">AAAAAAAAAAAA</p>
+                            <p class="window-task-text">
+                                Интересно, что пользователи думают о моем сайте :)
+                            </p>
+                            <p class="window-task-text">
+                                Попробуй выбрать и хороший и плохой комментарий.
+                            </p>
                         </div>
                         <div class="window-screen">
-                            <h2>AAAAAAAAAAA</h2>
+                            <h2>Оцени сайт "Анастасия"</h2>
+                            <form class="form-review" action="#" method="post">
+                                <fieldset>
+                                    <legend>Насколько тебе нравится мой первый проект?</legend>
+                                    <p class="poll-option">
+                                        <input
+                                            class="review"
+                                            type="radio"
+                                            id="option1"
+                                            name="review"
+                                            value="Он просто потрясающий!"
+                                            data-evaluation="good"
+                                        >
+                                        <label for="option1">Он просто потрясающий!</label>
+                                    </p>
+                                    <p class="poll-option">
+                                        <input
+                                            class="review"
+                                            type="radio"
+                                            id="option2"
+                                            name="review"
+                                            value="Здесь куча недоработок :("
+                                            data-evaluation="bad"
+                                        >
+                                        <label for="option2">Здесь куча недоработок :(</label>
+                                    </p>
+                                    <p class="poll-option">
+                                        <input
+                                            class="review"
+                                            type="radio"
+                                            id="option3"
+                                            name="review"
+                                            value="Ну так се..."
+                                            data-evaluation="bad"
+                                        >
+                                        <label for="option3">Ну так се...</label>
+                                    </p>
+                                    <p class="poll-option">
+                                        <input
+                                            class="review"
+                                            type="radio"
+                                            id="option5"
+                                            name="review"
+                                            value="Так держать!"
+                                            data-evaluation="good"
+                                        >
+                                        <label for="option5">Так держать!</label>
+                                    </p>
+                                    <p class="poll-option">
+                                        <input
+                                            class="review"
+                                            type="radio"
+                                            id="option4"
+                                            name="review"
+                                            value="Что за безвкусица??"
+                                            data-evaluation="bad"
+                                        >
+                                        <label for="option4">Что за безвкусица??</label>
+                                    </p>
+                                    <p class="poll-option">
+                                        <input
+                                            class="review"
+                                            type="radio"
+                                            id="option6"
+                                            name="review"
+                                            value="Это мой любимый сайт!!"
+                                            data-evaluation="good"
+                                        >
+                                        <label for="option6">Это мой любимый сайт!!</label>
+                                    </p>
+                                    <p class="error hidden">
+                                        Какая-то ошибка :( Попробуй выбрать другой вариант.
+                                    </p>
+                                    <p>
+                                        <button class="submit-button" type="submit">
+                                            Отправить отзыв
+                                        </button>
+                                    </p>
+                                </fieldset>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -110,5 +193,6 @@
                 </div>
             </div>
         </footer>
+        <script src="OtseniSait.js"></script>
     </body>
 </html>
