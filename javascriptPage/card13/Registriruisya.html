@@ -58,15 +58,47 @@
         <main class="main-gradient">
             <div class="container">
                 <div class="main-wrapper">
-                    <h1 class="main-header">AAAAAAA</h1>
+                    <h1 class="main-header">Регистрируйся</h1>
                     <div class="windows">
                         <div class="window-task">
                             <h2 class="window-task-name">Задание:</h2>
-                            <p class="window-task-text">AAAAAAAAAA</p>
-                            <p class="window-task-text">AAAAAAAAAAAA</p>
+                            <p class="window-task-text">Придумай сначала легкий, затем сложный пароль для авторизации :)</p>
+                            <p class="window-task-text">Обрати внимание, как меняется шкала надежности пароля.</p>
                         </div>
                         <div class="window-screen">
-                            <h2>AAAAAAAAAAA</h2>
+                            <h2>Регистрация:</h2>
+                            <form class="reg-form" action="#" method="post">
+                                <label class="reg-label" for="reg-name">Логин</label>
+                                <input
+                                    class="name"
+                                    type="text"
+                                    id="reg-name"
+                                    placeholder="Сюда нужно придумать себе ник"
+                                    value="RichBitch"
+                                    required
+                                >
+                                <label class="reg-label" for="reg-pass">Пароль</label>
+                                <input
+                                    class="password"
+                                    type="password"
+                                    id="reg-pass"
+                                    placeholder="********"
+                                    required
+                                >
+                                <div class="security">
+                                    <div class="security-bar"></div>
+                                </div>
+                                <div class="checkbox-area">
+                                    <input
+                                        class="show-password"
+                                        type="checkbox"
+                                        name="show-password"
+                                        id="show-pass"
+                                    >
+                                    <label class="checkbox-label" for="show-pass">Показать пароль</label>
+                                </div>
+                                <button class="btn" type="submit">Зарегистрироваться</button>
+                            </form>
                         </div>
                     </div>
                 </div>
