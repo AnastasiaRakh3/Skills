@@ -26,3 +26,43 @@
   background-color: rgb(131, 19, 196);
   color: snow;
 }
+/* другая тема */
+
+.rainbow .header {
+  background: linear-gradient(black, purple, black);
+  box-shadow: 0 0 10px purple;
+}
+
+.rainbow .main-gradient {
+  background: linear-gradient(
+    to right,
+    rgb(202, 72, 72),
+    orange,
+    yellow,
+    green,
+    lightblue,
+    blue,
+    purple
+  );
+}
+.rainbow .footer {
+  background: linear-gradient(black, purple, black);
+  box-shadow: 0 0 10px purple;
+}
+
+.rainbow .navigation-item:nth-child(3) .navigation-link {
+  color: orange;
+}
+.rainbow .main-header {
+  color: black;
+}
+
+.rainbow .cards-item {
+  border: 2px solid orange;
+  box-shadow: 0 0 5px 2px blue;
+}
+
+.rainbow .cards-skill-1 {
+  background-color: orange;
+  color: blue;
+}
