@@ -223,7 +223,6 @@ body {
   height: 5px;
   margin-bottom: 10px;
   background-color: rgba(198, 134, 211, 0.842);
-
   overflow: hidden;
 }
 .security-bar {
@@ -236,7 +235,6 @@ body {
   margin-bottom: 10px;
   font-size: 12px;
 }
-
 .btn {
   height: 40px;
   width: 30%;

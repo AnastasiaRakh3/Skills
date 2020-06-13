@@ -1,185 +1,289 @@
 @font-face {
-    font-family: "Sensei-Medium";
-    src: url(fonts/Sensei-Medium.otf);
+  font-family: "Sensei-Medium";
+  src: url(fonts/Sensei-Medium.otf);
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    min-width: 1200px;
-    font-family: "Sensei-Medium";
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 21px;
-    color: black;
-    background-color: snow;
+  margin: 0;
+  padding: 0;
+  min-width: 1200px;
+  font-family: "Sensei-Medium";
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: black;
+  background-color: snow;
 }
 
 .container {
-    width: 1170px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
+  width: 1170px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .header {
-    position: fixed;
-    z-index: 1;
-    width: 100%;
-    top: 0;
-    background-color: black;
-    box-shadow: 0 0 10px black;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  background-color: black;
+  box-shadow: 0 0 10px black;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .logo-img {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 .logo-text {
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 60px;
-    color: snow;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 60px;
+  color: snow;
 }
 
 .header-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
 }
 
 .navigation {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
 }
 
 .navigation-item {
-    font-family: "Sensei-Medium";
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 60px;
-    margin-left: 40px;
+  font-family: "Sensei-Medium";
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 60px;
+  margin-left: 40px;
 }
 
 .navigation-link {
-    text-decoration: none;
-    color: snow;
+  text-decoration: none;
+  color: snow;
 }
 
 .main-gradient {
-    background: url(pictures/smoke.png) repeat-x -70px 0 fixed, linear-gradient(to right, snow 30%, #f1fa78 70%);
-    min-height: 500px;
+  background: url(pictures/smoke.png) repeat-x -70px 0 fixed,
+    linear-gradient(to right, snow 30%, #f1fa78 70%);
+  min-height: 500px;
 }
 
 .main-words {
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 60px;
-    color: black;
-    text-align: center;
-    padding-top: 150px;
-    margin: 0;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  color: black;
+  text-align: center;
+  padding-top: 150px;
+  margin: 0;
 }
 
 .footer {
-    background-color: black;
-    box-shadow: 0 0 10px black;
+  background-color: black;
+  box-shadow: 0 0 10px black;
 }
 
 .footer-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0 20px;
 }
 
 .social {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    margin: 10px 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  margin: 10px 0;
 }
 
 .social-item:not(:first-child) {
-    margin-left: 30px;
+  margin-left: 30px;
 }
-
 
 /* главные свойства закончились*/
 
 .navigation-item:nth-child(3) .navigation-link {
-    color: #f1fa78;
+  color: #f1fa78;
 }
 
 .main-wrapper {
-    padding: 30px 0;
-    width: 1030px;
-    margin: 0 auto;
-    margin-top: 60px;
+  padding: 30px 0;
+  width: 1030px;
+  margin: 0 auto;
+  margin-top: 60px;
 }
 
 .main-header {
-    margin: 0 0 30px;
-    text-align: center;
+  margin: 0 0 30px;
+  text-align: center;
 }
-
 
 /* для карточки JavaScript:начало */
 
 .windows {
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 21px;
-    color: black;
-    display: flex;
-    justify-content: space-between;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: black;
+  display: flex;
+  justify-content: space-between;
 }
 
 .window-task {
-    width: 300px;
-    height: 300px;
-    background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 20px;
-    border: 2px solid black;
-    box-shadow: 0 0 5px 2px black;
-    box-sizing: border-box;
-    overflow: hidden;
+  width: 300px;
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+  border: 2px solid black;
+  box-shadow: 0 0 5px 2px black;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .window-task-name {
-    padding-left: 20px;
+  padding-left: 20px;
 }
 
 .window-task-text {
-    text-indent: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+  text-indent: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .window-screen {
-    width: 650px;
-    min-height: 300px;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 25px;
-    margin-bottom: 50px;
-    background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 20px;
-    border: 2px solid black;
-    box-shadow: 0 0 5px 2px black;
-    box-sizing: border-box;
-    overflow: hidden;
+  width: 650px;
+  min-height: 300px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 50px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+  border: 2px solid black;
+  box-shadow: 0 0 5px 2px black;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
-
 /* для карточки JavaScript:конец */
+
+.painting {
+  width: 100%;
+  margin-top: 25px;
+  padding-bottom: 20px;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: snow;
+  box-shadow: 0 0 2px 0 black;
+}
+.controls {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgb(131, 19, 196);
+  box-shadow: 0 0 2px 0 black;
+}
+.chosen-color {
+  height: 30px;
+  margin-right: 40px;
+  padding-left: 10px;
+
+  color: snow;
+  background-color: rgb(131, 19, 196);
+
+  border: 1px solid black;
+}
+.chosen-color:hover {
+  background-color: #473c8d;
+}
+.visually-hidden {
+  visibility: hidden;
+}
+.eraser-label {
+  color: snow;
+  position: relative;
+}
+
+.eraser-label::before {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: -1px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  font-size: 25px;
+}
+.eraser:checked + .eraser-label::before {
+  content: "✔";
+  position: absolute;
+  left: -30px;
+  top: -1px;
+
+  font-size: 25px;
+}
+/* удалила ширину и высоту,рамку у checked чтобы не повторять*/
+
+.eraser-label:hover::before {
+  background-color: #473c8d;
+}
+/* .eraser:focus + .eraser-label::before{
+    outline: 2px dashed #6e86b3;
+    outline-offset: 2px;
+} 
+не срабатывает фокус в хроме*/
+
+.canvas {
+  width: 250px;
+  align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  border: solid 1px black;
+  box-shadow: 0 0 1px 0 black;
+}
+.canvas::before {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  width: 120px;
+  height: 120px;
+
+  background-image: url("pictures/pikachu.png");
+  background-size: 120px 120px;
+}
+
+.pixel {
+  width: 25px;
+  height: 25px;
+
+  box-shadow: 0 0 1px 0 black;
+}
+
+.eraser-label,
+.pixel,
+.chosen-color {
+  cursor: pointer;
+}
