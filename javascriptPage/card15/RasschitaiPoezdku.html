@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript навыки</title>
+        <link rel="stylesheet" href="RasschitaiPoezdkuStyle.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="favicon/favicon-32x32.png"
+        >
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="favicon/favicon-16x16.png"
+        >
+        <link rel="manifest" href="favicon/site.webmanifest">
+        <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#603cba">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header-wrapper">
+                    <div class="logo">
+                        <img
+                            class="logo-img"
+                            src="pictures/logoLamp.svg"
+                            alt="logo"
+                            width="40"
+                            height="50"
+                        >
+                        <a href="#" class="navigation-link">
+                            <span class="logo-text">
+                                Анастасия
+                            </span>
+                        </a>
+                    </div>
+                    <ul class="navigation">
+                        <li class="navigation-item">
+                            <a class="navigation-link" href="#">HTML</a>
+                        </li>
+                        <li class="navigation-item">
+                            <a class="navigation-link" href="#">CSS</a>
+                        </li>
+                        <li class="navigation-item">
+                            <a class="navigation-link" href="#">JavaScript</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main class="main-gradient">
+            <div class="container">
+                <div class="main-wrapper">
+                    <h1 class="main-header">Рассчитай поездку</h1>
+                    <div class="windows">
+                        <div class="window-task">
+                            <h2 class="window-task-name">Задание:</h2>
+                            <p class="window-task-text">Посмотри, сколько времени займет разным транспортом добраться из Москвы до города твоей мечты.</p>
+                            <p class="window-task-text">Время на перерывы не учитывается.</p>
+                        </div>
+                        <div class="window-screen">
+                            <div class="trip">
+                                <div class="cities">
+                                    <div class="city-item" data-distance="1815">
+                                        <span>Берлин</span>
+                                    </div>
+                                    <div class="city-item" data-distance="3062">
+                                        <span>Рим</span>
+                                    </div>
+                                    <div class="city-item" data-distance="1765">
+                                        <span>Челябинск</span>
+                                    </div>
+                                    <div class="city-item" data-distance="712">
+                                        <span>Питер</span>
+                                    </div>
+                                    <div class="city-item" data-distance="3644">
+                                        <span>Барселона</span>
+                                    </div>
+                                    <div class="city-item" data-distance="1919">
+                                        <span>Прага</span>
+                                    </div>
+                                </div>
+                                <div class="transport">
+                                    <div class="transport-item" data-speed="700">
+                                        <span>700км/час</span>
+                                    </div>
+                                    <div class="transport-item" data-speed="90">
+                                        <span>90км/час</span>
+                                    </div>
+                                    <div class="transport-item" data-speed="80">
+                                        <span>80км/час</span>
+                                    </div>
+                                    <div class="transport-item" data-speed="60">
+                                        <span>60км/час</span>
+                                    </div>
+                                </div>
+                                <div class="result">
+                                    <span class="answer-sign1">Ответ:</span>
+                                    <span class="answer-result">0</span>
+                                    <span class="answer-sign2">ч.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-wrapper">
+                    <div class="logo">
+                        <img
+                            class="logo-img"
+                            src="pictures/logoLamp.svg"
+                            alt="logo"
+                            width="40"
+                            height="50"
+                        >
+                        <span class="logo-text">Анастасия</span>
+                    </div>
+                    <ul class="social">
+                        <li class="social-item">
+                            <a class="social-item" href="https://www.facebook.com/">
+                                <img src="pictures/logoFb.svg" alt="Фейсбук">
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a class="social-item" href="https://www.instagram.com/stasya_rakhmatova/">
+                                <img src="pictures/logoInst.svg" alt="Инстаграм">
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a class="social-item" href="https://twitter.com/real_anastasia3">
+                                <img src="pictures/logoTwit.svg" alt="Твиттер">
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a class="social-item" href="https://vk.com/itmustbeawesome">
+                                <img src="pictures/logoVk.svg" alt="Вконтакте">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script src="RasschitaiPoezdku.js"></script>
+    </body>
+</html>
