@@ -1,0 +1,633 @@
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url("Montserrat/Montserrat-Medium.otf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 1200px;
+  /* почему? */
+  font-family: "Montserrat-Regular", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #303030;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.main-header-wrapper {
+  height: 105px;
+  display: flex;
+  align-items: center;
+}
+.main-header-logo {
+  width: 200px;
+  /* зачем ставить ширину , если прописали уже в разметке? */
+  margin-right: 25px;
+}
+.main-header-delivery {
+  margin-right: auto;
+  color: #9a9a9a;
+}
+.main-header-phone-column {
+  display: flex;
+  flex-direction: column;
+
+  text-align: right;
+}
+.main-header-phone-column a {
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #303030;
+}
+.main-header-phone-column a::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  margin-right: 7px;
+  background-image: url("img/tel-icon.png");
+  background-repeat: no-repeat;
+}
+.main-header-phone-column p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 20px;
+  color: #9a9a9a;
+}
+/* main  */
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+.promo {
+  background-image: url("img/фон.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.promo-wrapper {
+  display: flex;
+}
+.promo-img-column {
+  margin: 95px 174px 0 130px;
+}
+.promo-text-column {
+  margin-top: 170px;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+}
+.promo-text-column p {
+  width: 500px;
+  padding-right: 40px;
+}
+.promo-text-1small {
+  margin-top: 0;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+}
+.promo-text-big {
+  margin-bottom: 40px;
+  margin-top: 0;
+  font-size: 60px;
+  line-height: 100%;
+  font-weight: 600;
+}
+.promo-text-2small {
+  margin-top: 0;
+  margin-bottom: 200px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+.green-button {
+  text-decoration: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 17px 84px;
+
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+  color: #ffffff;
+
+  background-color: #7eb252;
+}
+.promo .green-button {
+  align-self: flex-end;
+}
+
+.green-button::after {
+  content: "";
+  width: 31px;
+  height: 10px;
+  margin-left: 10px;
+  background-image: url(img/стрелка.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.statistics-list {
+  display: flex;
+  margin-top: 130px;
+  margin-bottom: 0;
+
+  list-style: none;
+}
+
+.statistics-item {
+  width: 200px;
+  position: relative;
+}
+.statistics-item::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background: center url("img/Кружок.png") no-repeat;
+  position: absolute;
+  top: -35px;
+  left: -40px;
+}
+.statistics-item::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: -30px;
+  left: -35px;
+}
+.statistics-item:not(:last-child) {
+  margin-right: auto;
+}
+
+.statistics-indicator {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-bottom: 6px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #7eb252;
+  border-bottom: solid 3px #7eb252;
+}
+.statistics-indicator span {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.statistics-description {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.symptomps {
+  background-image: linear-gradient(
+    to bottom,
+    white 380px,
+    #f6f9f3 380px,
+    #f6f9f3 920px,
+    white 920px
+  );
+}
+.symptoms-wrapper {
+  display: flex;
+}
+
+.symptoms-list-column {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding-top: 240px;
+}
+.symptoms-list-column h2 {
+  margin: 0;
+  margin-bottom: 45px;
+
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 50px;
+}
+.symptoms-list-column ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  counter-reset: li;
+  font-weight: bold;
+}
+.symptoms-list-column li {
+  display: flex;
+  align-items: center;
+
+  position: relative;
+
+  padding: 22.5px 0;
+  margin-right: 25px;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  border-bottom: 1px solid #e6efde;
+}
+.symptoms-list-column li::before {
+  content: "0" counter(li) ".";
+  counter-increment: li;
+  margin-right: 10px;
+  color: #bad3a7;
+}
+.symptoms-list-column li:first-child::after {
+  content: "";
+  width: 8px;
+  height: 13px;
+  background: center url("img/стрелка2.png") no-repeat;
+  position: absolute;
+  right: 20px;
+}
+
+.symptoms-img-column {
+  padding-top: 200px;
+}
+.symptoms-img-column img {
+  margin-bottom: 50px;
+}
+
+.success-secret {
+  margin-top: 200px;
+}
+.success-secret-wrapper {
+  display: flex;
+}
+.success-secret-left {
+  width: 600px;
+}
+.success-secret-left img {
+  margin-left: -275px;
+}
+.success-secret-left-block {
+  position: relative;
+  top: -153px;
+  background-color: white;
+  padding: 20px 16px;
+}
+.success-secret-left-border {
+  background-color: white;
+  border-top: solid 1px #c8dcba;
+  border-right: solid 1px #c8dcba;
+  border-left: solid 1px #c8dcba;
+}
+.success-secret-left p {
+  margin: 0;
+  padding: 30px 45px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+}
+.success-secret-left a {
+  padding: 17px 60px;
+}
+.success-secret-right {
+  width: 570px;
+  padding-left: 70px;
+}
+.success-secret-right h2 {
+  margin: 0;
+
+  margin-top: 40px;
+  margin-bottom: 35px;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: bold;
+}
+.success-secret-right p {
+  margin-bottom: 40px;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.success-secret-right ul {
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  list-style: none;
+}
+.success-secret-right li {
+  margin-bottom: 47px;
+  padding-left: 35px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.success-secret-right li::before {
+  content: "";
+  width: 8px;
+  height: 13px;
+  background-image: url("img/стрелка2.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+}
+.set {
+  margin-top: 50px;
+  margin-bottom: 200px;
+  padding-bottom: 70px;
+
+  background-image: linear-gradient(to top, #f6f9f3 380px, white 380px);
+}
+.set h2 {
+  width: 470px;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 50px;
+  margin: 0;
+  margin-bottom: 55px;
+}
+.set ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px 30px 15px;
+  background-color: white;
+}
+.set li {
+  width: 370px;
+  height: 330px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  border: solid 1px #e4eddc;
+}
+.set p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.set p::before {
+  content: "";
+  width: 196px;
+  height: 109px;
+  background-repeat: no-repeat;
+}
+.set li:first-child p::before {
+  width: 161px;
+  background-image: url("img/pic1.png");
+}
+.set li:nth-child(2) p::before {
+  background-image: url("img/pic2.png");
+}
+.set li:last-child p::before {
+  background-image: url("img/pic3.png");
+}
+
+.ingredients-wrapper {
+  display: flex;
+}
+.ingredients-img {
+  list-style: none;
+  padding: 0;
+
+  width: 570px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  padding-top: 30px;
+  margin-right: 30px;
+}
+.ingredients-img li {
+  width: 270px;
+  height: 270px;
+
+  margin-top: 30px;
+
+  position: relative;
+}
+.ingredients-img li::before {
+  content: "";
+
+  display: none;
+
+  width: 230px;
+  height: 230px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -115px;
+  margin-top: -115px;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+
+  white-space: pre;
+
+  color: white;
+  background-image: linear-gradient(to right bottom, #b5d494, #80a74e);
+  opacity: 0.9;
+}
+.ingredients-img li:hover::before {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ingredients-img li:nth-child(1):hover::before {
+  content: "Корень дягиля (дудника)\Aлекарственного";
+}
+.ingredients-img li:nth-child(2):hover::before {
+  content: "Колючник\Aбесстебельный";
+}
+.ingredients-img li:nth-child(3):hover::before {
+  content: "Натуральная\Aкамфора";
+}
+.ingredients-img li:nth-child(4):hover::before {
+  content: "Высушенный сок\Aиз ствола\Aясеня манного";
+}
+.ingredients-img li:nth-child(5):hover::before {
+  content: "Мирра\Aгорькая";
+}
+.ingredients-img li:nth-child(6):hover::before {
+  content: "Смесь трав\Aпо рецепту\AМарии Трэбэн";
+}
+.ingredients-description {
+  width: 570px;
+  display: flex;
+  flex-direction: column;
+}
+.ingredients-description h2 {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 50px;
+  margin: 0;
+  margin-bottom: 50px;
+  padding-left: 40px;
+}
+.ingredients-description ul {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  padding-left: 60px;
+  margin-bottom: auto;
+}
+.ingredients-description li {
+  margin-bottom: 30px;
+  color: #a4c58c;
+}
+.ingredients-description span {
+  color: black;
+}
+.ingredients-description a {
+  align-self: flex-end;
+}
+.warranty {
+  margin-top: 200px;
+  background-image: linear-gradient(to bottom, white 180px, #f6f9f3 180px);
+}
+.warranry-wrapper {
+  display: flex;
+  padding-bottom: 100px;
+}
+.warranty-text-column {
+  display: flex;
+  flex-direction: column;
+}
+.warranty-text-column h2 {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 50px;
+  margin: 0;
+  margin-top: 75px;
+  margin-bottom: 70px;
+}
+.warranty-text-column p {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  margin-left: 65px;
+  margin-bottom: 50px;
+}
+.block-no {
+  margin-left: 65px;
+  padding: 20px;
+  background-color: white;
+}
+.block-no-border {
+  border: 1px solid #b6d1a3;
+  padding-top: 45px;
+  padding-left: 45px;
+
+  display: flex;
+  flex-direction: column;
+}
+.block-no .block-no-border p {
+  margin: 0;
+
+  margin-bottom: 25px;
+  margin-right: 50px;
+
+  text-transform: none;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+}
+.block-no .block-no-border p:nth-child(2) {
+  margin-bottom: 38px;
+}
+.block-no .block-no-border a {
+  align-self: flex-end;
+}
+.warranty-img-column {
+  padding-left: 90px;
+  padding-right: 35px;
+}
+
+.footer-wrapper {
+  height: 105px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-logo {
+  width: 200px;
+  /* зачем ставить ширину , если прописали уже в разметке? */
+}
+.footer-links {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+}
+.footer-links a {
+  color: #9a9a9a;
+}
+
+.footer-links a:not(:last-child) {
+  margin-right: 40px;
+}
+
+.footer-phone-column {
+  display: flex;
+  flex-direction: column;
+
+  text-align: right;
+}
+.footer-phone-column a {
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #303030;
+}
+.footer-phone-column a::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  margin-right: 7px;
+  background-image: url("img/tel-icon.png");
+  background-repeat: no-repeat;
+}
+.footer-phone-column p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 20px;
+  color: #9a9a9a;
+}
